@@ -50,7 +50,7 @@ by process:
     `cb` process="powershell.exe" OR process="msbuild.exe" OR process="psexec.exe" OR process="at.exe" OR process="schtasks.exe" OR process="net.exe" OR process="vssadmin.exe" OR process="utilman.exe" OR process="wmic.exe" OR process="mshta.exe" OR process="wscript.exe" OR process="cscript.exe" OR process="cmd.exe" OR process="whoami.exe" OR process="mmc.exe" OR process="systeminfo.exe" OR process="csvde.exe" OR process="certutil.exe"
     | stats values(command_line) by process
 
-<b>Critical Process Check by computer
+<b> Critical Process Check by computer
 
     `cb` process="powershell.exe" OR process="msbuild.exe" OR process="psexec.exe" OR process="at.exe" OR process="schtasks.exe" OR process="net.exe" OR process="vssadmin.exe" OR process="utilman.exe" OR process="wmic.exe" OR process="mshta.exe" OR process="wscript.exe" OR process="cscript.exe" OR process="cmd.exe" OR process="whoami.exe" OR process="mmc.exe" OR process="systeminfo.exe" OR process="csvde.exe" OR process="certutil.exe"
     | stats values(command_line) by computer_name
