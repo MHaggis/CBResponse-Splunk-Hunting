@@ -18,7 +18,7 @@ Analyzing Carbon Black Response endpoint telemetry in Splunk
 
 <br>
 
-    `cb` notification_type="watchlist.hit.*"
+    `cb` notification_type="watchlist.hit.* "
     | stats values(watchlist_name)
 
 <br>
